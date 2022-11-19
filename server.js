@@ -21,14 +21,14 @@ app.use('/',Router)
 const PORT = process.env.PORT || 8000;
 const USERNAME = process.env.DB_USERNAME;
 const PASSWORD = process.env.DB_PASSWORD;
-const URL =process.eventNames.MONGODB_URL || `mongodb://${USERNAME}:${PASSWORD}@ac-jghc8qy-shard-00-00.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-01.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-02.qs8nk2q.mongodb.net:27017/Cluster0?ssl=true&replicaSet=atlas-los6oz-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const URL =process.env.MONGODB_URL || `mongodb://${USERNAME}:${PASSWORD}@ac-jghc8qy-shard-00-00.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-01.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-02.qs8nk2q.mongodb.net:27017/Cluster0?ssl=true&replicaSet=atlas-los6oz-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 
 
 Connection(URL)
 
 if(process.env.NODE_ENV === 'production'){
-    app.use(express.static('/client/build'))
+    app.use(express.static('client/build'))
 }
 app.listen(PORT,()=> console.log(`server running on port ${PORT}`))
 Defaultdata();
