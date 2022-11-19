@@ -21,7 +21,7 @@ app.use('/',Router)
 const PORT = process.env.PORT || 8000;
 const USERNAME = process.env.DB_USERNAME;
 const PASSWORD = process.env.DB_PASSWORD;
-const URL =process.env.MONGODB_URL || `mongodb://${USERNAME}:${PASSWORD}@ac-jghc8qy-shard-00-00.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-01.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-02.qs8nk2q.mongodb.net:27017/Cluster0?ssl=true&replicaSet=atlas-los6oz-shard-0&authSource=admin&retryWrites=true&w=majority`;
+const URL = process.env.MONGODB_URL || `mongodb://${USERNAME}:${PASSWORD}@ac-jghc8qy-shard-00-00.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-01.qs8nk2q.mongodb.net:27017,ac-jghc8qy-shard-00-02.qs8nk2q.mongodb.net:27017/Cluster0?ssl=true&replicaSet=atlas-los6oz-shard-0&authSource=admin&retryWrites=true&w=majority`;
 
 
 

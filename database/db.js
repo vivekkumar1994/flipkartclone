@@ -5,7 +5,7 @@ export  const Connection = async (URL) => {
     
   
     try{
-      await mongoose.connect(URL,{useUnifiedTopology : true,useNewUrlParser:true });
+         await mongoose.connect(URL,{useUnifiedTopology : true,useNewUrlParser:true });
       console.log("database connected succesfully");
 
     }
